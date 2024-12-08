@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  @font-face {
+    font-family: 'Digital-7';
+    src: url('digital-7.ttf');
+  }
+  body{
+    background-image: url(https://th.bing.com/th/id/OIP.MtONkAFRiVrgfE9r-XBFMwHaEo?w=340&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box{
+    background-image: url(https://th.bing.com/th/id/OIP.xZyrDfy-HLwJyaW9fATm_QHaEY?w=212&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  }
+  
+  .frame{
+    display: flex;
+    gap: 3px;
+  }
+  
+  h3{
+    font-weight: 500;
+    color:#130f40;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  .hrs,
+  .min,
+  .sec,
+  .ms,
+  .colon{
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #eb4d4b;
+  font-family: 'Digital-7';
+  }
+  .colon{
+  width: 10px;
+  height: 50px;
+  }
+  .buttons{
+    margin-top: 25px;
+  }
+  .buttons button{
+   border: none;
+   padding: 5px 20px;
+   color:white;
+   border-radius: 3px;
+   text-transform: uppercase;
+  }
+  
+  .start{background-color: #6ab04c;}
+  .stop{background-color: #30336b;}
+  .reset{background-color:  #eb4d4b;}
+  
+  
+  .start-active,
+  .stop-active{
+    pointer-events: none;
+    opacity: 0.5;
+  }
